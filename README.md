@@ -1,4 +1,4 @@
-<img src="./images/pix.jpg" width="82" align="right" />
+<img src="./images/pix.jpg" width="120" align="right" />
 
 # catwifi
 
@@ -16,3 +16,15 @@
 - T: 为加密类型，
 - S: 为wifi名称，
 - P: 为密码。
+
+## preview
+
+![image.png](https://i.loli.net/2020/08/12/ZB18WqN9k64msgO.png)
+![image.png](https://i.loli.net/2020/08/12/6aFN97BrVjJoCkK.png)
+![image.png](https://i.loli.net/2020/08/12/EIV5uWCe867dcQp.png)
+
+## TODO
+
+- `wifi` 列表存储本地
+
+- 使用说明

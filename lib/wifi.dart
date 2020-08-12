@@ -1,6 +1,46 @@
 /// create by d1y<chenhonzhou@gmail.com>
 /// https://github.com/d1y/cat_wifi/blob/master/decode.go
 
+class WifiList {
+
+  /// 列表
+  List<WifiItem> items;
+
+  WifiList() {
+    items = List();
+  }
+
+  toJSONEncodable() {
+    return items.map((item) {
+      return item.toJSONEncodable();
+    }).toList();
+  }
+
+}
+
+class WifiItem {
+  /// `wifi` ssid 名称
+  String wifiName;
+
+  /// `wifi` 密码
+  String wifiPassword;
+
+  /// `wifi` 类型
+  String type;
+
+  WifiItem({this.wifiName, this.wifiPassword, this.type});
+
+  toJSONEncodable() {
+    Map<String, dynamic> m = new Map();
+
+    m['wifiName'] = wifiName;
+    m['wifiPassword'] = wifiPassword;
+    m['type'] = type;
+
+    return m;
+  }
+}
+
 /// `wifi` 解密
 class Wifi {
   // 解码
